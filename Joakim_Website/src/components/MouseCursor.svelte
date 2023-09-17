@@ -5,7 +5,7 @@
 		{ x: 0, y: 0 },
 		{
 			stiffness: 0.2,
-			damping: 0.5
+			damping: 0.3
 		}
 	);
 
@@ -13,7 +13,7 @@
 		{ x: 0, y: 0 },
 		{
 			stiffness: 0.1,
-			damping: 0.1
+			damping: 0.3
 		}
 	);
 
@@ -43,7 +43,7 @@
 
 <style>
 	:global(body) {
-		cursor: none;
+		cursor: auto;
 	}
 	
 	.w-full {
@@ -55,7 +55,7 @@
 	}
 	
 	svg {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		pointer-events: none;

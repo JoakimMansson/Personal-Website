@@ -11,6 +11,7 @@
     import MouseCursor from './components/MouseCursor.svelte';
     import Navbar from "./components/Navbar.svelte";
 	import ExpertiseBoard from './components/ExpertiseBoard.svelte';
+	import ProjectsBar from './components/ProjectsBar.svelte';
 </script>
 
 <main>
@@ -22,6 +23,7 @@
 		<h2 class="Titles">Software Student & Enthusiast</h2>
 	</div>
 	<ExpertiseBoard/>
+	<ProjectsBar/>
 </main>
 
 <style>

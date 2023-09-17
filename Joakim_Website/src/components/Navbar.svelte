@@ -17,14 +17,14 @@
     }
   
     .MyButtons button {
-      padding: 10px 20px; /* Adjust padding for buttons */
+      padding: 1vw 1vw; /* Adjust padding for buttons */
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
   
     .MyButtons button:not(:last-child) {
-      margin-right: 40px; /* Add space between buttons (except the last one) */
+      margin-right: 3vw; /* Add space between buttons (except the last one) */
     }
   
   

@@ -18,6 +18,7 @@
 <span class={`boop${clicked ? (" " + animationType) : ""}`} class:active={clicked} on:click={onClick} on:mouseenter={onClick} style="--animation: boop">
 	<slot/>
 </span>
+
 <style>
 	@keyframes wiggle {
 		0% {
@@ -45,14 +46,17 @@
 			transform: rotate(0deg);
 		}
 	}
+	
 	.boop {
 		display: inline-block;
 	}
+
 	.boop.active {
 		animation-duration: 1s;
 		animation-play-state: paused;
 		animation-fill-mode: forwards;
 	}
+
 	.boop.wiggle {
 		animation-name: wiggle;
 		animation-play-state: running;
@@ -83,6 +87,7 @@
 			transform: scale(1);
 		}
 	}
+
 	.boop.scale-wiggle {
 		animation-name: scale-wiggle;
 		animation-play-state: running;
@@ -113,6 +118,7 @@
 			transform: translateY(0px);
 		}
 	}
+
 	.boop.pos-y-wiggle {
 		animation-name: pos-y-wiggle;
 		animation-play-state: running;
