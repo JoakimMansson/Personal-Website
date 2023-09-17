@@ -28,7 +28,6 @@
 
 <style>
 
-
 	.Introduction { 
 		position: absolute;
 		top: 50%;

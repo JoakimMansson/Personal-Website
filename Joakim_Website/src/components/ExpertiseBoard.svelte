@@ -2,77 +2,40 @@
 
 </script>
 
-<div class="Expertise">
-    <h1 class="AboutMe"> About Me </h1>
-    <div class="container">
-        <div class="box">
-            <div class="box-icon">
-                <i class="devicon-arduino-plain"></i>
-            </div>
-            <div class="box-text">
-                <h2>Student</h2>
-                <p>Pursuing my master's degree in Artificial Intelligence at Halmstad University.</p>
-            </div>
-        </div>
-        
-        <div class="box">
-            <div class="box-icon">
-                <i class="devicon-arduino-plain"></i>
-            </div>
-            <div class="box-text">
-                <h2>Programming Language</h2>
-                <p>
-                    Skilled in developing software in C, C++, Python and Java. Currently further sharpening my
-                    skills in Python and C++. Also trying to learn more about Svelte. ---- ADD ICONS!!
-                </p>
-            </div>
-        </div>
-    
-
-    </div>
+<div class="Header">
+    <h1>About Me</h1>
+</div>
+<div class="AboutMe">
+    <p> Hey, my name is Joakim. 
+        I'm a 22 year old student at Halmstad University, currently pursuing my master's in
+        Artificial Intelligence and Software Engineering. I'm a very curious person and I love
+        to learn new things, especially when it comes to programming and software development.
+    </p>
 </div>
 
 <style>
-    .AboutMe {
-        display: inline-block;
-        font-size: xx-large;
-        font: 'Roboto Mono';
-    }
 
-    .Expertise {
-    position: absolute;
-    top: 900px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: nowrap; /* Prevent wrapping to the next line */
-        justify-content: space-between;
-    }
-
-    .box {
-        border: 3px solid #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .box-icon {
+    .Header {
         text-align: center;
+        padding-top: 800px;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
     }
 
-    .box-text h2 {
-        font-size: 18px;
-        margin-top: 10px;
+    .Header h1 {
+        border-bottom: 1px solid white;
+        display: inline-block;
+        width: 56vw;
+        padding-bottom: 10px;
     }
 
-    .box-text p {
-        font-size: 14px;
-        margin-top: 10px;
+    .AboutMe {
+        display: grid;
+        width: 30vw;
+        padding-top: 40px;
+        padding-left: 20vw;
+        font-family: 'Roboto Mono', monospace;
     }
+    
 </style>
 
