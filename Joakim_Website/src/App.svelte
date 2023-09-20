@@ -9,20 +9,24 @@
 
 <script>
     import MouseCursor from './components/MouseCursor.svelte';
+	import ScrollDownAnimation from './components/ScrollDownAnimation.svelte';
+
     import Navbar from "./components/Navbar.svelte";
 	import AboutMe from './components/AboutMe.svelte';
 	import Projects from './components/Projects.svelte';
-	import ScrollDownAnimation from './components/ScrollDownAnimation.svelte';
+	import Experience from './components/Experience.svelte';
+	import Contact from './components/Contact.svelte';
+	
 </script>
 
 <main>
 	<div class="body">
-		<div class="animated-background"></div>
+		<span class="animated-background"></span>
     	<MouseCursor />
     	<Navbar />
     	<div class="Introduction">
 			<h1 class="Name">Joakim Månsson</h1>
-			<h2 class="Titles">Software Student & Enthusiast</h2>
+			<h2 class="Titles">Software Student</h2>
 		</div>
 		<div class="scroll-icon">
 			<ScrollDownAnimation/>
@@ -32,8 +36,9 @@
 			<ScrollDownAnimation/>
 		</div>
 		
-		<Projects/>
-		</div>
+		<Experience/>
+		<Contact/>
+	</div>
     
 </main>
 
@@ -67,23 +72,12 @@
     .animated-background {
         width: 100%;
         height: 100%;
-        background-color: #0C0032;
+        background-color: rgba(28, 40, 51 ,100);
         position: fixed;
-        animation: backgroundAnimation 5s infinite alternate;
         z-index: -1; /* Set a lower z-index to push it below other content */
     }
 
-    @keyframes backgroundAnimation {
-        0% {
-            background-color: #000000;
-        }
-        50% {
-            background-color: #1a0202;
-        }
-        100% {
-            background-color: #000000;
-        }
-    }
+
 
 	@keyframes myNameBounceIn {
 	0% {

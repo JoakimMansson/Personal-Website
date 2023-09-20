@@ -1,32 +1,53 @@
 <script>
-  import BoopActionAnimation from "./BoopActionAnimation.svelte";
+  function scrollIntoView({ target }) {
+		const el = document.querySelector(target.getAttribute('href'));
+		if (!el) return;
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 </script>
   
 
-<div class="MyButtons">
-  <h1 class="MyName" style="display: inline-block;"> >_ JoakimMansson </h1>
-  <button class="AboutMe"> About me<sup>1</sup> </button>
-  <button class="Experience"> Experience<sup>2</sup> </button>
-  <button class="Projects"> Projects<sup>3</sup> </button>
-  <button class="Contact"> Contact<sup>4</sup> </button>
+<div class="NavBar">
+  <h1 class="MyName"> >_ JoakimMansson </h1>
+  <div class="MyButtons">
+    <button href="#SectionAboutMe" class="AboutMe" on:click|preventDefault={scrollIntoView}> About me<sup>1</sup> </button>
+    <button href="#SectionExperience" class="Experience" on:click|preventDefault={scrollIntoView}> Experience<sup>2</sup> </button>
+    <!--<button href="#SectionProjects" class="Projects" on:click|preventDefault={scrollIntoView}> Projects<sup>3</sup> </button> -->
+    <button href="#SectionContact" class="Contact" on:click|preventDefault={scrollIntoView}> Contact<sup>3</sup> </button>
+  </div>
 </div>
 
+
 <style>
-  /* CSS styles go here */
+  
+  .NavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Vertically align items in the middle */
+    padding: 20px; /* Add padding as needed */
+    background-color: #34495e;
+  }
+
   .MyName {
     display: inline-block;
     margin-left: 1%;
     font-size: xx-large;
     color: #fff;
+    margin-right: auto;
   }
   
   .MyButtons {
-    display: flex; /* Use flexbox for horizontal alignment */
+    display: flex;
+    flex-direction: row;
     align-items: center; /* Vertically align items in the middle */
   }
   
   .MyButtons button {
     padding: 1vw 1vw; /* Adjust padding for buttons */
+    font-size: 1vw;
     border: none;
     border-radius: 5px;
     cursor: pointer;

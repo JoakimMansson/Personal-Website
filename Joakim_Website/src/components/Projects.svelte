@@ -1,6 +1,8 @@
-<div class="Header">
-    <h1>Projects</h1>
-</div>
+<section id="SectionProjects">
+    <div class="Header">
+        <h1>Projects</h1>
+    </div>    
+</section>
 
 <div class="Project-1">
         <img src="Alarm3Dprint.png" alt="404 project not found :)" class="AlarmImg"/>
@@ -22,6 +24,16 @@
         </p>
     </div>
 </div>
+
+<div class="Project-3">
+    <img src="IKEA_logo.png" alt="404 project not found :)" class="IKEAImg"/>
+    <div class="ContainerTextP2">
+        <p>
+            An implementation of machine learning algortihm K-means to help IKEA expand to the best possible regions.
+        </p>
+    </div>
+</div>
+
 
 <style>
 

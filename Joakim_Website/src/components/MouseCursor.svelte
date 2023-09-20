@@ -37,7 +37,7 @@
 <svg
 	class ="w-full h-full"
 >
-	<circle cx={$coords1.x} cy={$coords1.y} r={$size} stroke="#3500D3" stroke-width="1" fill-opacity="1"/>
+	<circle cx={$coords1.x} cy={$coords1.y} r={$size} stroke="#FFF" stroke-width="1" fill-opacity="1"/>
 	<circle cx={$coords2.x} cy={$coords2.y} r={$size/4} fill="#282828"/>
 </svg>
 
